@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title> ToDo App </title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <% if (!user) { %>
+        <form action="/api/login" method="POST">
+            <input type="text" name="username" placeholder="Username">
+            <input type="text" name="password" placeholder="Password">
+
+            <button type="submit"> Login </button>
+        </form>
+        <% } else { %>
+        <form action="/api/logout" method="POST">
+            <span> <%= user.username %></span>
+
+            <button type="submit"> Logout </button>
+        </form>
+        <% } %>
+    </header>
+
+    <div class="container">
+        <h2> A Simple ToDo List App </h2>
+        <form action="/addtask" method="POST">
+            <input type="text" name="newtask" placeholder="add new task">
+            <button> Add Task </button>
+
+            <h2> Added Task: <span class="amount"><%= tasks.length %> </span> </h2>
+            <% for( let i = 0; i < tasks.length; i++){ %>
+            <li>
+                <input type="checkbox" name="check" value="<%= tasks[i] %>" />
+                <a href="/delete/<%= [i] %>">✘</a>
+                <%= tasks[i] %>
+            </li>
+            <% } %>
+            <button formaction="/completetask" type="submit"> Complete </button>
+
+            <h2> Completed task: <span class="amount"><%= completedTasks.length %> </span> </h2>
+            <% for(let i = 0; i < completedTasks.length; i++){ %>
+
+            <li>
+                <input type="checkbox" name='uncheck' value="<%= completedTasks[i] %>" checked>
+                <%= completedTasks[i] %>
+            </li>
+            <% } %>
+
+            <button formaction="/uncheck" type="submit"> Uncheck </button>
+        </form>
+    </div>
+</body>
+
+</html>

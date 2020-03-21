@@ -1,0 +1,49 @@
+[
+    {
+        "id": 1,
+        "tasks": [
+            "User is able to login into the system;",
+            "User is able to view only personal notes;",
+            "User can manage notes only when logged in;"
+        ]
+    },
+    {
+        "id": 2,
+        "tasks": [
+            "Be awesome!",
+            "Task 1",
+            "Task 2",
+            "Task 3",
+            "Task 4"
+        ]
+    },
+    {
+        "id": 3,
+        "tasks": [
+            "User can manage notes only when logged in;",
+            "User is able to login into the system;",
+            "Buy milk",
+            "Meditiate"
+        ]
+    },
+    {
+        "id": 4,
+        "tasks": [
+            "Finish homework",
+            "Task 3",
+            "Task 2",
+            "Practice node.js"
+        ]
+    },
+    {
+        "id": 5,
+        "tasks": [
+            "Finish homework",
+            "Task 3",
+            "Task 2",
+            "User is able to login into the system;",
+            "User is able to view only personal notes;",
+            "User can manage notes only when logged in;"
+        ]
+    }
+]

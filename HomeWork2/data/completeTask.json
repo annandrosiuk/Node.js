@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "completedTasks": [
+            "practise with nodejs"
+        ]
+    },
+    {
+        "id": 2,
+        "completedTasks": [
+            "Task 1",
+            "Task 2",
+            "Task 3",
+            "Task 4",
+            "Task 5",
+            "Task 6"
+        ]
+    },
+    {
+        "id": 3,
+        "completedTasks": [
+            "Task 1",
+            "Task 2",
+            "Task 3",
+            "Task 4",
+            "Task 5",
+            "Task 6"
+        ]
+    },
+    {
+        "id": 4,
+        "completedTasks": [
+            "Task 1",
+            "Task 2",
+            "Task 3",
+            "Task 4",
+            "Task 5",
+            "Task 6"
+        ]
+    },
+    {
+        "id": 5,
+        "completedTasks": [
+            "Task 1",
+            "Task 2",
+            "Task 3",
+            "Task 4",
+            "Task 5",
+            "Task 6"
+        ]
+    }
+]
